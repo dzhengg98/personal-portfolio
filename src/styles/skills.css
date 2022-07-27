@@ -12,7 +12,7 @@
 }
 
 .skill-box {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-transparency);
   backdrop-filter: blur(3px);
   border-radius: 64px;
   text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .skills p {
-  color: #B8B8B8;
+  color: var(--color-light-white);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -75,7 +75,7 @@
 .Git,
 .AWS,
 .Python {
-  background-color: rgb(250 250 250);
+  background-color: var(--color-white);
   color: var(--color-black);
   height: 100px;
   width: 100px;
@@ -110,7 +110,7 @@
   font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
-  color: rgb(34, 34, 34);
+  color: var(--color-light-black);
 }
 
 .white-div {

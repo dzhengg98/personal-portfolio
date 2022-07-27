@@ -19,10 +19,12 @@
   --color-light-white: rgba(255, 255, 255, 0.9);
   --color-white-gray: rgba(217, 217, 217, 0.9);
   --color-gray: rgba(255, 255, 255, 0.5);
+  --color-light-gray: rgb(184, 184, 184);
   --color-black: rgb(18, 18, 18);
   --color-light-black: rgba(34, 34, 34, 0.9);
   --color-gold: rgb(255, 215, 0);
   --color-light-gold: rgba(205, 215, 0, 0.75);
+  --color-transparency: rgba(255, 255, 255, 0.1);
 
   --transition: 0.3s ease-in-out;
   --border-radius: 20px;
@@ -35,3 +37,4 @@
 @import "./styles/banner.css";
 @import "./styles/about.css";
 @import "./styles/skills.css";
+@import "./styles/projects.css";

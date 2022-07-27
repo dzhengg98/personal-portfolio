@@ -1,0 +1,183 @@
+.projects {
+  padding: 80px 0;
+  position: relative;
+  background: url("../assets/images/ferrari.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.projects-container-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.projects-container-description {
+  color: var(--color-light-white);
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.first-project,
+.second-project,
+.third-project {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-transparency);
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.project-carousel {
+  border-radius: var(--border-radius);
+}
+
+.project-image-container {
+  margin: 50px 25px;
+}
+.project-image {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-white);
+  padding: 2px;
+}
+.project-info-container {
+  margin: 20px 25px 50px;
+}
+
+.project-title {
+  color: var(--color-gold);
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.project-description-container {
+  margin-top: 10px;
+}
+
+.project-description {
+  line-height: 24px;
+  padding: 10px;
+  background-color: rgb(34 34 34 / 60%);
+  border-radius: var(--border-radius);
+  overflow-y: scroll;
+}
+
+.project-description span {
+  color: var(--color-gold);
+}
+
+.project-links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-button {
+  padding: 20px 30px;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  width: 115px;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-button:hover {
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.motobike {
+  position: absolute;
+  width: 200px;
+  left: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-project,
+  .second-project,
+  .third-project {
+    flex-direction: column;
+  }
+
+  .project-carousel {
+    margin-top: -20px;
+  }
+
+  .projects-container-description {
+    font-size: 14px;
+  }
+
+  .project-title {
+    font-size: 32px;
+  }
+
+  .project-image-container {
+    margin: 50px 25px 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-links {
+    margin-top: 0px;
+  }
+  .project-image {
+    height: 330px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects {
+    height: 110vh;
+  }
+
+  .project-title {
+    font-size: 24px;
+    margin-top: -20px;
+  }
+
+  .project-image {
+    height: 190px;
+    width: auto;
+    margin-top: -35px;
+  }
+
+  .project-description {
+    height: 180px;
+    width: 260px;
+    overflow-y: scroll;
+  }
+
+  .project-description-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-info-container {
+    margin: 20px 50px;
+    padding: 10px;
+  }
+  .project-button {
+    padding: 5px 5px;
+    margin-top: 10px;
+  }
+
+  .projects-container {
+    margin-top: -75px;
+  }
+  
+  .motobike {
+    display: none;
+  }
+}
