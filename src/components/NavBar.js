@@ -36,7 +36,7 @@ const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : "scrolled"}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="https://dzhengg98.github.io/personal-portfolio/">
             <div id="waving-img-container">
               <img className="waving-img" src={Wave} alt="waving gif" />
             </div>

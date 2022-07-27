@@ -11,7 +11,7 @@ const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
-            <Navbar.Brand href="/">
+            <Navbar.Brand href="https://dzhengg98.github.io/personal-portfolio/">
               <div id="peace-img-container">
                 <img className="peaceout-animation" src={Peaceout} alt="Peace" />
               </div>
