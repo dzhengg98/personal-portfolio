@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-light-white: rgba(255, 255, 255, 0.9);
+  --color-white-gray: rgba(217, 217, 217, 0.9);
+  --color-black: rgb(18, 18, 18);
+  --color-light-black: rgba(34, 34, 34, 0.9);
+  --color-gold: rgb(255, 215, 0);
+  --color-light-gold: rgba(255, 215, 0, 0.75);
+
+  --transition: 0.3s ease-in-out
+}
+
+@import "./styles/reset.css";
+@import "./styles/defaults.css";
+@import "./styles/navbar.css";
