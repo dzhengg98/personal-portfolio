@@ -1,0 +1,300 @@
+.skills {
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/images/14231421.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#skills .container {
+  padding-top: 100px;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  max-height: 800px;
+  height: 800px;
+}
+
+.skills h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.skills p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.tech-container {
+  max-height: 510px;
+  overflow-y: scroll;
+}
+
+.React,
+.Redux,
+.Javascript,
+.Rails,
+.HTML5,
+.CSS3,
+.Ruby,
+.SCSS,
+.MongoDB,
+.Mongoose,
+.ExpressJS,
+.PostgreSQL,
+.Heroku,
+.SQL,
+.SQLite3,
+.Webpack,
+.jQuery,
+.Git,
+.AWS,
+.Python {
+  background-color: rgb(250 250 250);
+  color: var(--color-black);
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.React > span,
+.Redux > span,
+.Javascript > span,
+.Rails > span,
+.HTML5 > span,
+.CSS3 > span,
+.Ruby > span,
+.SCSS > span,
+.MongoDB > span,
+.Mongoose > span,
+.ExpressJS > span,
+.PostgreSQL > span,
+.Heroku > span,
+.SQL > span,
+.SQLite3 > span,
+.Webpack > span,
+.jQuery > span,
+.Git > span,
+.AWS > span,
+.Python > span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(34, 34, 34);
+}
+
+.white-div {
+  height: 9px;
+  width: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.Javascript > span {
+  position: relative;
+  top: -6px;
+}
+
+.Rails > span {
+  position: relative;
+  top: -18px;
+}
+
+.Mongoose > span {
+  position: relative;
+  top: -20px;
+}
+
+.ExpressJS > span {
+  position: relative;
+  top: 5px;
+}
+
+.SQL > span {
+  position: relative;
+  top: 5px;
+}
+
+.React-icon {
+  color: rgb(97, 219, 251);
+}
+
+.Redux-icon {
+  color: rgb(118, 74, 188);
+}
+
+.Javascript-icon {
+  color: rgb(240, 219, 79);
+  background-color: #323330;
+  position: relative;
+  top: 9px;
+}
+
+.Rails-icon {
+  color: red;
+  position: relative;
+  top: 9px;
+}
+
+.HTML5-icon {
+  color: #e34f26;
+}
+
+.CSS3-icon {
+  color: rgb(38, 77, 228);
+}
+
+.Ruby-icon {
+  color: red;
+}
+
+.SCSS-icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 0.2rem;
+}
+
+.MongoDB-icon {
+  color: #4DB33D;
+}
+
+.PostgreSQL-icon {
+  color: #0064a5;
+}
+
+.Heroku-icon {
+  color: #6762A6;
+  background-color: #C9C3E6;
+}
+
+.SQL-icon,
+.Python-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.SQLite3-icon {
+  color:rgb(111, 139, 248);
+}
+
+.Webpack-icon {
+  color: skyblue;
+}
+
+.jQuery-icon {
+  color:rgb(1, 77, 147);
+}
+
+.Git-icon {
+  color: #F1502F;
+}
+
+.AWS-icon {
+  color: black;
+  position: relative;
+  top: 9px;
+}
+
+.fireworks {
+  width: 800px;
+  position: absolute;
+  left: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+  .fireworks {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech {
+    flex-wrap: wrap;
+    margin-top: 16px;
+    gap: 1rem;
+    width: 330px;
+  }
+
+  .fireworks {
+    display: none;
+  }
+  
+  #skills .container {
+    padding-top: 10px;
+  }
+
+  .skill-box {
+    height: 650px;
+    max-height: 650px;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+
+  .skills p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .tech-container {
+    max-height: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .React,
+  .Redux,
+  .Javascript,
+  .Rails,
+  .HTML5,
+  .CSS3,
+  .Ruby,
+  .SCSS,
+  .MongoDB,
+  .Mongoose,
+  .ExpressJS,
+  .PostgreSQL,
+  .Heroku,
+  .SQL,
+  .SQLite3,
+  .Webpack,
+  .jQuery,
+  .Git,
+  .AWS,
+  .Python {
+    margin-bottom: 0rem;
+  }
+}

@@ -14,7 +14,7 @@ const Banner = () => {
   const [ loopNum, setLoopNum ] = useState(0);
   const [ isDeleting, setIsDeleting ] = useState(false);
   const [ text, setText ] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(150 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Full-Stack Developer", "Software Engineer", "UI/UX Designer" ];
   const period = 2000;
@@ -46,7 +46,7 @@ const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(200);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -87,7 +87,8 @@ const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={Astronaut} alt="Astronaut"/>
-                </div>}
+                </div>
+              }
             </TrackVisibility>
           </Col>
         </Row>

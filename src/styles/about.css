@@ -3,7 +3,7 @@
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
 }
 
 .about-title {
@@ -15,6 +15,13 @@
 
 .about-title span {  
   text-shadow: 0 15px 25px var(--color-black);
+}
+
+.airplane {
+  width: 300px;
+  margin-bottom: -300px;
+  position: relative;
+  left: 65%;
 }
 
 .about-content {
@@ -38,8 +45,22 @@
   width: 620px;
   border: 1px solid var(--color-light-gold);
   border-radius: var(--border-radius);
-  background-color: var(--color-light-black);
+  background: linear-gradient(-45deg, rgba(238, 118, 82, 0.4), rgba(231, 60, 126, 0.4), rgba(35, 166, 213, 0.4), rgba(35, 213, 171, 0.8));
+  background-size: 400% 400%;
   margin-top: 20px;
+  animation: gradientchange 10s ease infinite;
+}
+
+@keyframes gradientchange {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .about-article p span {
@@ -73,6 +94,10 @@
     padding: 10px;
     margin-top: 0;
   }
+
+  .airplane {
+    width: 225px;
+  }
   
 }
 
@@ -96,6 +121,10 @@
   
   .container {
     width: 414px;
+  }
+
+  .airplane {
+    display: none;
   }
 
 }

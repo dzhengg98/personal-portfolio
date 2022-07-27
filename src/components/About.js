@@ -1,9 +1,21 @@
 import ME from '../assets/images/ME.png';
+import Airplane from '../assets/images/airplane.gif';
+import TrackVisibility from "react-on-screen";
+import 'animate.css';
 
 const About = () => {
   return (
     <section className="about" id="about">
-      <h2 className="about-title"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span> <span>M</span><span>e</span></h2>
+      <TrackVisibility>
+        {({ isVisible }) =>
+          <div className={isVisible ? "animate_animated animate__bounceIn" : ""}>
+            <img className="airplane" src={Airplane} alt="airplane" />
+          </div>
+        }
+      </TrackVisibility>
+      <h2 className="about-title">
+        <span>About Me</span>
+      </h2>
       <div className="about-content">
         <div className="about-image">
           <img src={ME} alt="David Zheng"/>
