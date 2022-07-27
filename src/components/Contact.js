@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ContactImage from "../assets/images/contact-img.svg";
+import ContactImage from "../assets/images/programmer.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import emailjs from "emailjs-com";
@@ -21,6 +21,7 @@ const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
+        <div className="contact-container">
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -38,19 +39,19 @@ const Contact = () => {
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="firstName" placeholder="First name here" required />
+                      <input type="text" name="firstName" placeholder="First name" required />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="lastName" placeholder="Last name here" required />
+                      <input type="text" name="lastName" placeholder="Last name" required />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" name="email" placeholder="Email address here" required />
+                      <input type="email" name="email" placeholder="Email" required />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" name="phone" placeholder="Phone number here" required />
+                      <input type="tel" name="phone" placeholder="Phone" required />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" name="message" placeholder="Provide your message here" required />
+                      <textarea rows="6" name="message" placeholder="Provide your message" required />
                       <button type="submit"><span>send</span></button>
                     </Col>
                   </Row>
@@ -59,6 +60,7 @@ const Contact = () => {
             </TrackVisibility>
           </Col>
         </Row>
+        </div>
       </Container>
     </section>
   )

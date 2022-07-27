@@ -1,10 +1,16 @@
 .contact {
-  background-image: url('../assets/images/4321443.jpeg');
+  background-image: url('https://cdn.wallpapersafari.com/79/73/ScZyDB.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   padding: 60px 0 200px 0;
+}
+
+.contact-container {
+  background-color: var(--color-transparency);
+  border-radius: var(--border-radius);
+  padding: 0 20px;
 }
 
 #contact-image {
@@ -20,7 +26,7 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  background-color: var(--color-gray);
+  background-color: var(--color-white-gray);
   border: 1px solid var(--color-transparency);
   border-radius: 20px;
   color: var(--color-white);

@@ -1,0 +1,135 @@
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url('../assets/images/footer.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.peaceout-animation {
+  width: 26%;
+}
+
+.footer-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-light-gray);
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.footer-description a {
+  text-decoration: none;
+  color: var(--color-light-gray);
+}
+
+.footer-description a:hover {
+  color: var(--color-gold);
+}
+
+#footer-angellist-icon {
+  animation: wavehand2 1s linear infinite;
+}
+
+@keyframes wavehand2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.footer-social-icons a {
+  text-decoration: none;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 20px;
+  display: inline-block;
+  margin-left: 14px;
+  margin-top: 10px;
+}
+
+.footer-social-icons a {
+  width: 42px;
+  height: 42px;
+  background: var(--color-white-gray);
+  display: inline-flex;
+  border-radius: var(--border-radius-circle);
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid var(--color-white);
+}
+
+.footer-social-icons a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-circle);
+  transform: scale(0);
+  transition: var(--transition);
+}
+
+.footer-social-icons a:hover::before {
+  transform: scale(1);
+}
+
+.footer-social-icons a img {
+width: 42px;
+height: 42px;
+z-index: 1;
+transition: all 0.3s ease-out;
+}
+
+.footer-social-icons a:hover {
+  border: 5px solid var(--color-gold);
+}
+
+.footer-social-icons a img {
+  width: 42px;
+  height: 42px;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.footer-social-icons a:hover img {
+  transform: rotate(360deg) scale(1.1);
+}
+
+#peace-img-container {
+  border-radius: var(--border-radius-circle);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 10px;
+  background-color: var(--color-transparency);
+  border: 1px solid var(--color-white);
+}
+
+#peace-img-container:hover {
+  background-color: var(--color-white);
+  border: 5px solid var(--color-light-gold);
+}
+
+#peace-img-container img {
+  width: 120px;
+  height: auto;
+  position: relative;
+  left: -25px;
+  top: -10px;
+}

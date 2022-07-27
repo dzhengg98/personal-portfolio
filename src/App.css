@@ -24,7 +24,7 @@
   --color-light-black: rgba(34, 34, 34, 0.9);
   --color-gold: rgb(255, 215, 0);
   --color-light-gold: rgba(205, 215, 0, 0.75);
-  --color-transparency: rgba(255, 255, 255, 0.1);
+  --color-transparency: rgba(255, 255, 255, 0.4);
 
   --transition: 0.3s ease-in-out;
   --border-radius: 20px;
@@ -39,3 +39,4 @@
 @import "./styles/skills.css";
 @import "./styles/projects.css";
 @import "./styles/contact.css";
+@import "./styles/footer.css";
