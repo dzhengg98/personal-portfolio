@@ -1,0 +1,131 @@
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('../assets/images/24742162.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid var(--color-gray);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.tagline:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background: linear-gradient(90.21deg, rgba(74, 47, 189, 0.5)  -5.91%, rgba(170, 54, 124, 0.5)  111.58%);
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner-social-links {
+  color: var(--color-light-gold);
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+#phone-link,
+#email-link {
+  color: var(--color-light-gold);
+  text-decoration: none;
+  animation: goldglow 1s linear infinite;
+}
+
+@keyframes goldglow {
+  0% {
+    color: var(--color-light-gold);
+  }
+  25% {
+    color: var(--color-gold);
+  }
+  50% {
+    color: var(--color-light-gold);
+  }
+  75% {
+    color: var(--color-gold);
+  }
+  100% {
+    color: var(--color-light-gold);
+  }
+}
+
+.banner-link button {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--color-white);
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.banner-link a {
+  text-decoration: none;
+}
+
+.banner-link button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.banner-link button:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.banner img {
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+@media screen and (max-width: 600px) {
+  .banner img {
+    display: none;
+  }
+  #main-banner {
+    margin-top: 60px;
+  }
+}
+

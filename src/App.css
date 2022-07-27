@@ -18,14 +18,18 @@
   --color-white: rgb(255, 255, 255);
   --color-light-white: rgba(255, 255, 255, 0.9);
   --color-white-gray: rgba(217, 217, 217, 0.9);
+  --color-gray: rgba(255, 255, 255, 0.5);
   --color-black: rgb(18, 18, 18);
   --color-light-black: rgba(34, 34, 34, 0.9);
   --color-gold: rgb(255, 215, 0);
   --color-light-gold: rgba(255, 215, 0, 0.75);
 
-  --transition: 0.3s ease-in-out
+  --transition: 0.3s ease-in-out;
+  --border-radius: 20px;
+  --border-radius-circle: 50%;
 }
 
 @import "./styles/reset.css";
 @import "./styles/defaults.css";
 @import "./styles/navbar.css";
+@import "./styles/banner.css";
