@@ -36,6 +36,7 @@
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  text-shadow: 0 15px 25px var(--color-black)
 }
 
 .banner-social-links {
@@ -44,30 +45,59 @@
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  background-color: transparent;
+  border-radius: var(--border-radius);
 }
 
 #phone-link,
 #email-link {
   color: var(--color-light-gold);
   text-decoration: none;
-  animation: goldglow 1s linear infinite;
+  animation: goldglow1 2s linear infinite;
 }
 
-@keyframes goldglow {
+#email-link {
+  animation: goldglow2 2s linear infinite;
+}
+
+@keyframes goldglow1 {
   0% {
     color: var(--color-light-gold);
   }
   25% {
     color: var(--color-gold);
+    font-weight: 500;
   }
   50% {
     color: var(--color-light-gold);
   }
   75% {
     color: var(--color-gold);
+    font-weight: 500;
   }
   100% {
     color: var(--color-light-gold);
+  }
+}
+
+@keyframes goldglow2 {
+  0% {
+    color: var(--color-gold);
+    font-weight: 500;
+  }
+  25% {
+    color: var(--color-light-gold);
+  }
+  50% {
+    color: var(--color-gold);
+    font-weight: 500;
+  }
+  75% {
+    color: var(--color-light-gold);
+  }
+  100% {
+    color: var(--color-gold);
+    font-weight: 500;
   }
 }
 
