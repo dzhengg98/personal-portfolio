@@ -16,7 +16,7 @@ const NavBar = () => {
   useEffect(() => {
 
     const onScroll = () => {
-      if (window.scrollY > 5) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -34,7 +34,7 @@ const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={scrolled ? "scrolled" : "scrolled"}>
         <Container>
           <Navbar.Brand href="/">
             <div id="waving-img-container">
