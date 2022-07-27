@@ -66,7 +66,7 @@ const Projects = () => {
                   </div>
                   <div className="project-info-container">
                     <h4 className="project-title">REM32</h4>
-                    <div className="project-description">REM32 is a clone of the popular website <span>500px</span> where you can browse photos and upload your very own. The application was built using <span>React, Redux, Javascript, Ruby, Rails,</span> and <span>PostgreSQL.</span> Using REM32, users are able to upload and browse variety of photos as well as post comments, add likes and follow other users. Through the use of <span>AWS Storage,</span>to handle image hosting, the application has increase scalability and server load is reduced. Try it out today!</div>
+                    <div className="project-description">REM32 is a clone of the popular website <span>500px</span> where you can browse photos and upload your very own. The application was built using <span>React, Redux, Javascript, Ruby, Rails,</span> and <span>PostgreSQL.</span> Using REM32, users are able to upload and browse variety of photos as well as post comments, add likes and follow other users. Through the use of <span>AWS Storage,</span> to handle image hosting, the application has increase scalability and server load is reduced. Try it out today!</div>
                     <div className="project-links">
                       <a href="https://github.com/dzhengg98/rem32" target="_blank" rel="noreferrer noopener"><button className="project-button">Github</button></a>
                       <a href="https://rem32.herokuapp.com/#/" target="_blank" rel="noreferrer noopener"><button className="project-button">Live</button></a>

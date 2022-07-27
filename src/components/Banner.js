@@ -8,50 +8,9 @@ import Resume from "../assets/docs/Resume.pdf";
 import { FaPhoneSquare } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BiCurrentLocation } from "react-icons/bi";
+import Typewriter from "typewriter-effect";
 
 const Banner = () => {
-
-  const [ loopNum, setLoopNum ] = useState(0);
-  const [ isDeleting, setIsDeleting ] = useState(false);
-  const [ text, setText ] = useState('');
-  const [delta, setDelta] = useState(150 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "Full-Stack Developer", "Software Engineer", "UI/UX Designer" ];
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(200);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
-
   return (
     <section className="banner" id="home">
       <Container>
@@ -62,9 +21,15 @@ const Banner = () => {
               <div id="main-banner" className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm David Zheng`} 
-                  <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Full-Stack Developer", "Software Engineer", "UI/UX Designer" ]'>
-                    <span className="wrap"> {text}</span>
-                  </span>
+                  <Typewriter
+                    options={{
+                      strings: ["Full-Stack Developer", "Software Engineer", "UI/UX Designer"],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 70,
+                      pauseFor: 1000,
+                    }}
+                  />
                 </h1>
                 <p className="banner-social-links">
                   <span className="social-link"><BiCurrentLocation/> NEW YORK CITY, NEW YORK | </span>
