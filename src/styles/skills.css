@@ -24,6 +24,7 @@
 .skills h2 {
 	font-size: 45px;
 	font-weight: 700;
+  -webkit-text-stroke: 1px #000000;
 }
 
 .skills p {
@@ -32,6 +33,7 @@
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
+  font-weight: bold;
 }
 
 .skill-slider {

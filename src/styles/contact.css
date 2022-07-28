@@ -21,6 +21,7 @@
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
+  -webkit-text-stroke: 1px #000000;
 }
 
 .contact-form input,

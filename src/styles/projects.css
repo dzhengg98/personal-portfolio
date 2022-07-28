@@ -13,6 +13,7 @@
   font-weight: 700;
   text-align: center;
   color: var(--color-white);
+  -webkit-text-stroke: 1px #000000;
 }
 
 .projects-container-description {
@@ -23,6 +24,7 @@
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+  font-weight: bold;
 }
 
 .first-project,
@@ -56,6 +58,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 32px;
+  -webkit-text-stroke: 1px #000000;
 }
 
 .project-description-container {

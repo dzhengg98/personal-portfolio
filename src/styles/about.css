@@ -11,6 +11,7 @@
   font-weight: 700;
   padding-top: 100px;
   text-align: center;
+  -webkit-text-stroke: 1px #000000;
 }
 
 .about-title span {  
