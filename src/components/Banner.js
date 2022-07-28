@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Astronaut from "../assets/images/astronaut.webp";
 import { ArrowRightCircle, ArrowDownCircle } from "react-bootstrap-icons";
@@ -36,7 +35,7 @@ const Banner = () => {
                   <span className="social-link">
                     <a href="sms:+1917-517-0812" id="phone-link"><FaPhoneSquare/> (917) 517-0812</a> |
                   </span>
-                  <span className="banner-social-link">
+                  <span className="social-link">
                     <a href="mailto:dzheng3456@gmail.com"id="email-link"> <MdMarkEmailUnread/> dzheng3456@gmail.com</a>
                   </span>
                 </p>

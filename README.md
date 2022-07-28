@@ -4,12 +4,12 @@ This site is my personal portfolio and was built using React, JavaScript, HTML5 
 
 ## Contact Info
 
-[Live Link](https://dzhengg98.github.io/personal-portfolio/)
-
-**[LinkedIn](https://www.linkedin.com/in/david-zheng-87671b237/)**
-
-**[Angellist](https://angel.co/u/david-zheng-27)**
-
-**[Twitter](https://twitter.com/dzhengg1)**
-
 dzheng3456@gmail.com
+
+- [Live Link](https://dzhengg98.github.io/personal-portfolio/)
+
+- **[LinkedIn](https://www.linkedin.com/in/david-zheng-87671b237/)**
+
+- **[Angellist](https://angel.co/u/david-zheng-27)**
+
+- **[Twitter](https://twitter.com/dzhengg1)**
