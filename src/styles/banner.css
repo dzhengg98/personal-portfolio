@@ -128,7 +128,7 @@
   background-color: var(--color-white);
 }
 
-.banner img {
+.astronaut {
   animation: updown 3s linear infinite;
 }
 

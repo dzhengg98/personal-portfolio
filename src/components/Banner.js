@@ -50,7 +50,7 @@ const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={Astronaut} alt="Astronaut" draggable="false"/>
+                  <img className="astronaut" src={Astronaut} alt="Astronaut" draggable="false"/>
                 </div>
               }
             </TrackVisibility>
