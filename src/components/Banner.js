@@ -17,7 +17,7 @@ const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div id="main-banner" className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              <div id="main-banner" className={isVisible ? "animate__animated animate__backInDown" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm David Zheng`} 
                   <Typewriter
@@ -50,7 +50,7 @@ const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={Astronaut} alt="Astronaut"/>
+                  <img src={Astronaut} alt="Astronaut" draggable="false"/>
                 </div>
               }
             </TrackVisibility>

@@ -16,14 +16,14 @@ const Skills = () => {
       <TrackVisibility>
       {({ isVisible }) =>
         <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-          <img className="fireworks" src={Fireworks} alt="fireworks" />
+          <img className="fireworks" src={Fireworks} alt="fireworks" draggable="false" />
         </div>
       }
       </TrackVisibility>
       <div className="container">
         <TrackVisibility>
           {({ isVisible }) =>
-            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+            <div className={isVisible ? "animate__animated animate__bounceInDown" : ""}>
               <div className="skill-box">
                 <h2>Skills</h2>
                 <p>These are the skills I've learned along the way!</p>
@@ -61,7 +61,7 @@ const Skills = () => {
                       <span>Ruby</span>
                     </div>  
                     <div className="SCSS">
-                      <img className="SCSS-icon" src={SCSS} alt="scss icon"/>
+                      <img className="SCSS-icon" src={SCSS} alt="scss icon" draggable="false"/>
                       <span>SCSS</span>
                     </div>
                   </div>
@@ -71,11 +71,11 @@ const Skills = () => {
                       <span>MongoDB</span>
                     </div>
                     <div className="Mongoose">
-                      <img className="Mongoose-icon" src={Mongoose} alt="mongoose icon"/>
+                      <img className="Mongoose-icon" src={Mongoose} alt="mongoose icon" draggable="false" />
                       <span>Mongoose</span>
                     </div>
                     <div className="ExpressJS">
-                      <img className="Express-icon" src={Express} alt="express icon"/>
+                      <img className="Express-icon" src={Express} alt="express icon" draggable="false" />
                       <span>ExpressJS</span>
                     </div>  
                     <div className="PostgreSQL">
@@ -89,7 +89,7 @@ const Skills = () => {
                       <span>Heroku</span>
                     </div>
                     <div className="SQL">
-                      <img className="SQL-icon" src={SQL} alt="sql icon"/>
+                      <img className="SQL-icon" src={SQL} alt="sql icon" draggable="false" />
                       <span>SQL</span>
                     </div>
                     <div className="SQLite3">
@@ -116,7 +116,7 @@ const Skills = () => {
                       <span>AWS</span>      
                     </div>  
                     <div className="Python">
-                      <img className="Python-icon" src={Python} alt="python icon"/>
+                      <img className="Python-icon" src={Python} alt="python icon" draggable="false" />
                       <span>Python</span>
                     </div>
                   </div>

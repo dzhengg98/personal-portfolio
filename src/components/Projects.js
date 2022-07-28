@@ -33,7 +33,7 @@ const Projects = () => {
       <TrackVisibility>
         {({ isVisible }) =>
           <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-            <img className="motobike" src={Motobike} alt="motobike" />
+            <img className="motobike" src={Motobike} alt="motobike" draggable="false" />
           </div>
         }
       </TrackVisibility>
@@ -41,13 +41,13 @@ const Projects = () => {
         <div className="projects-container">
         <TrackVisibility>
           {({ isVisible }) =>
-            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+            <div className={isVisible ? "animate__animated animate__bounceInDown" : ""}>
               <h2 className="projects-container-title">Projects</h2>
               <p className="projects-container-description">Here are a list of all the projects I have currently done.</p>
               <Carousel responsive={responsive} infinite={true} className="project-carousel">
                 <div className="first-project">
                   <div className="project-image-container">
-                    <img className="project-image" src={PickaPet} alt="Picka Pet"/>
+                    <img className="project-image" src={PickaPet} alt="Picka Pet" draggable="false" />
                   </div>
                   <div className="project-info-container">
                     <h4 className="project-title">Picka Pet</h4>
@@ -62,7 +62,7 @@ const Projects = () => {
                 </div>
                 <div className="second-project">
                   <div className="project-image-container">
-                    <img className="project-image" src={REM32} alt="REM32"/>
+                    <img className="project-image" src={REM32} alt="REM32" draggable="false" />
                   </div>
                   <div className="project-info-container">
                     <h4 className="project-title">REM32</h4>
@@ -75,7 +75,7 @@ const Projects = () => {
                 </div>
                 <div className="third-project">
                   <div className="project-image-container">
-                    <img className="project-image" src={PM25} alt="PM25"/>
+                    <img className="project-image" src={PM25} alt="PM25" draggable="false" />
                   </div>
                   <div className="project-info-container">
                     <h4 className="project-title">PM25</h4>

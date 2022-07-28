@@ -13,16 +13,16 @@ const Footer = () => {
           <Col size={12} sm={6}>
             <Navbar.Brand href="https://dzhengg98.github.io/personal-portfolio/">
               <div id="peace-img-container">
-                <img className="peaceout-animation" src={Peaceout} alt="Peace" />
+                <img className="peaceout-animation" src={Peaceout} alt="Peace" draggable="false"/>
               </div>
             </Navbar.Brand>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="footer-social-icons">
-              <a href="https://www.linkedin.com/in/david-zheng-87671b237/" target='_blank' rel="noopener noreferrer"><img src={LinkedinIcon} alt="Linkedin" /></a>
-              <a href="https://github.com/dzhengg98" target='_blank' rel="noopener noreferrer"><img src={GithubIcon} alt="Github" /></a>
-              <a href="https://angel.co/u/david-zheng-27" target='_blank' rel="noopener noreferrer"><img id="footer-angellist-icon" src={AngellistIcon} alt="Angellist" /></a>
-              <a href="https://twitter.com/dzhengg1" target='_blank' rel="noopener noreferrer"><img src={TwitterIcon} alt="twitter" /></a>
+              <a href="https://www.linkedin.com/in/david-zheng-87671b237/" target='_blank' rel="noopener noreferrer"><img src={LinkedinIcon} alt="Linkedin" draggable="false" /></a>
+              <a href="https://github.com/dzhengg98" target='_blank' rel="noopener noreferrer"><img src={GithubIcon} alt="Github" draggable="false" /></a>
+              <a href="https://angel.co/u/david-zheng-27" target='_blank' rel="noopener noreferrer"><img id="footer-angellist-icon" src={AngellistIcon} alt="Angellist" draggable="false" /></a>
+              <a href="https://twitter.com/dzhengg1" target='_blank' rel="noopener noreferrer"><img src={TwitterIcon} alt="twitter" draggable="false" /></a>
             </div>
             <p className="footer-description"><a href="https://github.com/dzhengg98">@dzhengg98</a> | David Zheng</p>
             <p className="footer-description">Copyright 2022 | All Rights Reserved</p>

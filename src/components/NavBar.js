@@ -38,7 +38,7 @@ const NavBar = () => {
         <Container>
           <Navbar.Brand href="https://dzhengg98.github.io/personal-portfolio/">
             <div id="waving-img-container">
-              <img className="waving-img" src={Wave} alt="waving gif" />
+              <img className="waving-img" src={Wave} alt="waving gif" draggable="false" />
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -53,10 +53,10 @@ const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icons">
-                <a href="https://www.linkedin.com/in/david-zheng-87671b237/" target='_blank' rel="noopener noreferrer"><img src={LinkedinIcon} alt="linkedin icon" /></a>
-                <a href="https://github.com/dzhengg98" target='_blank' rel="noopener noreferrer"><img src={GithubIcon} alt="github icon" /></a>
-                <a href="https://angel.co/u/david-zheng-27" target='_blank' rel="noopener noreferrer" id="angellist-icon"><img src={AngellistIcon} alt="angellist icon" /></a>
-                <a href="https://twitter.com/dzhengg1" target='_blank' rel="noopener noreferrer"><img src={TwitterIcon} alt="twitter icon" /></a>
+                <a href="https://www.linkedin.com/in/david-zheng-87671b237/" target='_blank' rel="noopener noreferrer"><img src={LinkedinIcon} alt="linkedin icon" draggable="false" /></a>
+                <a href="https://github.com/dzhengg98" target='_blank' rel="noopener noreferrer"><img src={GithubIcon} alt="github icon" draggable="false" /></a>
+                <a href="https://angel.co/u/david-zheng-27" target='_blank' rel="noopener noreferrer" id="angellist-icon"><img src={AngellistIcon} alt="angellist icon" draggable="false" /></a>
+                <a href="https://twitter.com/dzhengg1" target='_blank' rel="noopener noreferrer"><img src={TwitterIcon} alt="twitter icon" draggable="false" /></a>
               </div>
               <HashLink to="#connect">
                 <button className="btn connect-btn"><span>Let's Connect</span></button>

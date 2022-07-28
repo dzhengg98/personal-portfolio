@@ -26,15 +26,15 @@ const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img id="contact-image" className={isVisible ? "animate__animated animate__zoomIn" : ""} src={ContactImage} alt="Contact Us"/>
+                <img id="contact-image" className={isVisible ? "animate__animated animate__zoomIn" : ""} src={ContactImage} alt="Contact Us" draggable="false"/>
               }
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <img className="contact-happy-image" src={Happy} alt="Happy" />
+                <div className={isVisible ? "animate__animated animate__bounceInDown" : ""}>
+                <img className="contact-happy-image" src={Happy} alt="Happy" draggable="false"/>
                 <h2 className="contact-title">Get In Touch</h2>
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
                   <Row>

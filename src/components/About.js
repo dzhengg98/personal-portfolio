@@ -9,19 +9,19 @@ const About = () => {
       <TrackVisibility>
         {({ isVisible }) =>
           <div className={isVisible ? "animate_animated animate__bounceIn" : ""}>
-            <img className="airplane" src={Airplane} alt="airplane" />
+            <img draggable="false" className="airplane" src={Airplane} alt="airplane" />
           </div>
         }
       </TrackVisibility>
       <TrackVisibility>
         {({ isVisible }) =>
-          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+          <div className={isVisible ? "animate__animated animate__backInDown" : ""}>
             <h2 className="about-title">
               <span>About Me</span>
             </h2>
             <div className="about-content">
               <div className="about-image">
-                <img src={ME} alt="David Zheng"/>
+                <img draggable="false" src={ME} alt="David Zheng"/>
               </div>
               <div className="about-articles">
                 <article className="about-article">
