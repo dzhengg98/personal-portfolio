@@ -101,6 +101,11 @@
   }
 }
 
+.banner-link {
+  display: flex;
+  gap: 50px;
+}
+
 .banner-link button {
   color: var(--color-white);
   font-weight: 700;
@@ -143,6 +148,13 @@
   }
   100% {
       transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-link {
+    display: block;
+    gap: 0;
   }
 }
 
