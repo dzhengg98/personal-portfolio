@@ -22,7 +22,7 @@ const Banner = () => {
                 <h1>{`Hi! I'm David Zheng`} 
                   <Typewriter
                     options={{
-                      strings: ["Full-Stack Developer", "Software Engineer", "UI/UX Designer"],
+                      strings: ["New York Based", "Full-Stack Developer", "Software Engineer", "UI/UX Designer"],
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 70,
