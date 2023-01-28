@@ -40,7 +40,7 @@ const Banner = () => {
                   </span>
                 </p>
                 <div className="banner-link">
-                  <a href='#connect' className="connect-link"><button>Let’s Connect <ArrowRightCircle size={25} className="svg-right" /></button></a>
+                  <a href='#connect' className="connect-link"><button>Let’s Connect! <ArrowRightCircle size={25} className="svg-right" /></button></a>
                   <a href={Resume} className="connect-link" download><button>Resume <ArrowDownCircle size={25} className="svg-down" /></button></a>
                 </div>
               </div>}
