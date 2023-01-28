@@ -56,7 +56,7 @@ const Projects = () => {
                     </div>
                     <div className="project-links">
                       <a href="https://github.com/madeleinepla/PickaPet" target="_blank" rel="noreferrer noopener"><button className="project-button">Github</button></a>
-                      <a href="https://picka-pet.herokuapp.com/" target="_blank" rel="noreferrer noopener"><button className="project-button">Live</button></a>
+                      <a href="https://pickapet.herokuapp.com/" target="_blank" rel="noreferrer noopener"><button className="project-button">Live</button></a>
                     </div>
                   </div>
                 </div>
