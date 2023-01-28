@@ -55,7 +55,7 @@ const Projects = () => {
                       <p className="project-description">Picka Pet is a pet interaction web application that allows users to interact with a variety of different pets and have fun while doing so! Picka Pet was built using <span>React, Redux, Javascript, NodeJS, Express,</span> and <span>MongoDB.</span> This application leverages the use of <span>RESTful routes</span> to implement <span>CRUD functionality</span> and allows the users to dynamically interact with the pets through a variety of pet actions. Try it out today! </p>
                     </div>
                     <div className="project-links">
-                      <a href="https://github.com/madeleinepla/PickaPet" target="_blank" rel="noreferrer noopener"><button className="project-button">Github</button></a>
+                      <a href="https://github.com/dzhengg98/PickaPet" target="_blank" rel="noreferrer noopener"><button className="project-button">Github</button></a>
                       <a href="https://pickapet.herokuapp.com/" target="_blank" rel="noreferrer noopener"><button className="project-button">Live</button></a>
                     </div>
                   </div>
